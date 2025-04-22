@@ -1,2 +1,2 @@
 # single_cell_JO
-Private repository for single cell analysis
+Repository for single cell analysis relating to a specific project.
