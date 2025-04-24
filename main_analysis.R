@@ -1,9 +1,7 @@
-## Analysing data in R first 
-
 
 ## Bespoke functions 
 
-## Customised version of plotPCA function from DESeq2 package 
+# Customised version of plotPCA function from DESeq2 package 
 plotPCA_DESeq2.local <- function(object, intgroup="condition", inputGenes = NA, ntop = 500, returnData=FALSE)
 {
   # calculate the variance for each gene
@@ -484,17 +482,6 @@ g2 <- plotPCA_DESeq2.local(vst(dds.obj), intgroup = "Phase")
 }
 
 
-
-
-
-
-## Plan here -> I'm not sure why but looking at the python code by the client, it looks like they generate factors from which to scale 
-## the data by using the 'non-targeting' proportion. 
-## So build using the control and then scale everything according to the control 
-## This sounds like I can achieve the same using projection mapping -> Build reference with the non-targeting and then project the targeting 
-## population on top 
-## Removing positive controls too 
-
 analysis4 <- function(){
 dir.create("analysis4")
 setwd("analysis4")
@@ -553,7 +540,7 @@ base::saveRDS(target.mapped, "target_mapped.rds")
 ## This is done in context of the high mitochondrial population (cluster 17) which is high MT% vs other cells 
 ## and cell-cycle phase 
 ## The MT is to check whether certain pathways/GO terms are enriched for this cluster
-## The cell-cycle analysis is performed for validation purposes as requested by client 
+## The cell-cycle analysis is performed for validation purposes  
 
 analysis5 <- function(){
 dir.create("analysis5")
