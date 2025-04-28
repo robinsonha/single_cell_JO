@@ -8,4 +8,4 @@ It includes a short set of commands initially to create and install pre-requisit
 Then moves onto pre-processing, removal of doublets, dimension reduction and clustering of scRNA data. 
 process_scRNA_MT.py details the mitochondrial population checks but leaves the usual mitochondrial filter off 
 so that all cells (originally provided and containing an off-shoot cluster) can be used.
-process_scRNA_MT.py details the cell cycle validation.
+process_scRNA_cell_cycle_validation.py details the cell cycle validation.
